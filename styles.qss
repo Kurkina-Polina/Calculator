@@ -1,0 +1,108 @@
+
+#verticalWidget {
+    background-color: #04BFAD;
+    border-radius: 25px;
+    position: absolute;
+    width: 360px;
+    height: 156px;
+    left: 0px;
+    top: 24px;
+}
+
+#verticalLayout_2{
+    background-color: #04BFAD;
+}
+
+#main_menu {
+    background-color: #024873;
+}
+
+QLineEdit#display_hitory {
+    outline: 0px;
+    border: none;
+    font-family: "Open Sans Semibold";
+    font-size: 20px;
+    font-weight: 600;  /* Semibold */
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.7);
+    background: transparent;
+    text-align: right;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+QLineEdit#lineEdit {
+    min-width: 281px;
+    max-width: 281px;
+    min-height: 60px;
+    max-height: 60px;
+    font-family: "Open Sans Semibold";
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0.5px;
+    color: white;
+    background: transparent;
+    border: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    selection-background-color: transparent;
+
+}
+
+
+/* Кнопки */
+QPushButton {
+    background-color: #B0D1D8;
+    border: none;
+    color: #024873;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+QPushButton:pressed {
+    background-color: #04BFAD;
+    color: #FFFFFF;
+}
+
+QPushButton#btn_C {
+    background-color: #FA8072;
+    color: #FFFFFF;
+}
+
+QPushButton#btn_C:pressed{
+    background-color: #f8afaf;
+}
+
+QPushButton#btn_parentheses,
+QPushButton#btn_invert,
+QPushButton#btn_percent,
+QPushButton#btn_minus,
+QPushButton#btn_plus,
+QPushButton#btn_calculate,
+QPushButton#btn_mult,
+QPushButton#btn_devide{
+    background-color: #0889A6;
+    color: #FFFFFF;
+}
+
+QPushButton#btn_parentheses:pressed,
+QPushButton#btn_invert:pressed,
+QPushButton#btn_percent:pressed,
+QPushButton#btn_minus:pressed,
+QPushButton#btn_plus:pressed,
+QPushButton#btn_calculate:pressed,
+QPushButton#btn_mult:pressed,
+QPushButton#btn_devide:pressed{
+    background-color: #F7E425;
+}
+
