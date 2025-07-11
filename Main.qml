@@ -9,10 +9,9 @@ ApplicationWindow {
     width: 360
     height: 640
     title: "Calculator"
-    property int currentPage: 0
+    property int currentPage: 0 // Текущая страница (0 - основное, 1 - скрытое)
     property bool isLongPress: false
 
-    // Текущая страница (0 - основное, 1 - скрытое)
     onCurrentPageChanged: {
         if (currentPage === 0) {
             stackView.replace(null, mainMenuComponent)

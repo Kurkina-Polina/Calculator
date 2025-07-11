@@ -4,9 +4,8 @@ import QtQuick.Controls 6.4
 Button {
     property string btnText: ""
     property string btnType: "action"
-    property var handler: null // Общий обработчик
-    property var onClickAction: null // Конкретная функция для клика
-    // icon.source: `qrc:/icons/${btnType}/${btnText}.svg`
+    property var handler: null
+    property var onClickAction: null
     icon.width: 60
     icon.height: 60
     text: btnText

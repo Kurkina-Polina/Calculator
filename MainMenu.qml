@@ -92,58 +92,37 @@ Rectangle {
             top: text.bottom
             topMargin: 24
         }
-        // Сетка кнопок
+
         GridLayout {
             anchors.horizontalCenter: parent.horizontalCenter
             columns: 4
             columnSpacing: 15
             rowSpacing: 15
 
-            // "plus", "minus", "mult", "devide" "btn_" "percent" "parenthese" "invert" "C" "point" "calculate"
-            // Ряд 0
-
             CalculatorButton { btnText: "parenthese"; btnType: "action";  onClickAction: calculator.handleParentheses}
             CalculatorButton { btnText: "invert"; btnType: "action"; onClickAction: calculator.handleInvertSign}
             CalculatorButton { btnText: "percent"; btnType: "action"; onClickAction: calculator.handlePercent}
             CalculatorButton { btnText: "devide"; btnType: "operation"; handler: calculator; onClickAction: function() { calculator.handleOperation("devide")}}
 
-            // Ряд 1
             CalculatorButton { btnText: "btn_7"; btnType: "number"; handler: calculator; onClickAction: function() { calculator.handleDigit("7")}}
             CalculatorButton { btnText: "btn_8"; btnType: "number"; handler: calculator; onClickAction: function() { calculator.handleDigit("8")}}
             CalculatorButton { btnText: "btn_9"; btnType: "number"; handler: calculator; onClickAction: function() { calculator.handleDigit("9")}}
             CalculatorButton { btnText: "mult";  btnType: "operation"; handler: calculator; onClickAction: function() { calculator.handleOperation("mult")}}
 
-            // Ряд 2
             CalculatorButton { btnText: "btn_4"; btnType: "number"; handler: calculator; onClickAction: function() { calculator.handleDigit("4")}}
             CalculatorButton { btnText: "btn_5"; btnType: "number"; handler: calculator; onClickAction: function() { calculator.handleDigit("5")}}
             CalculatorButton { btnText: "btn_6"; btnType: "number"; handler: calculator; onClickAction: function() { calculator.handleDigit("6") }}
             CalculatorButton { btnText: "minus"; btnType: "operation"; handler: calculator; onClickAction: function() { calculator.handleOperation("minus")} }
 
-            // Ряд 3
             CalculatorButton { btnText: "btn_1"; btnType: "number"; handler: calculator; onClickAction: function() { calculator.handleDigit("1") }}
             CalculatorButton { btnText: "btn_2"; btnType: "number"; handler: calculator; onClickAction: function() { calculator.handleDigit("2")  }}
             CalculatorButton { btnText: "btn_3"; btnType: "number"; handler: calculator; onClickAction: function() { calculator.handleDigit("3") }}
             CalculatorButton { btnText: "plus";  btnType: "operation";  handler: calculator; onClickAction: function() { calculator.handleOperation("plus")} }
 
-            // Ряд 4
             CalculatorButton { btnText: "C"; btnType: "action"; onClickAction: calculator.handleClear }
             CalculatorButton { btnText: "btn_0"; btnType: "number"; handler: calculator; onClickAction: function() { calculator.handleDigit("0") } }
             CalculatorButton { btnText: "point"; btnType: "action";  onClickAction: calculator.handlePoint}
             CalculatorButton { btnText: "calculate"; btnType: "action";  onClickAction: calculator.calculate}
         }
-
-        // ColumnLayout {
-        //     Layout.preferredWidth: 360
-        //     Layout.preferredHeight: 616
-        //     anchors.fill: parent
-        //     spacing: 0
-
-        //     // Главное меню (первая вкладка)
-        //     // Поля ввода
-
-
-        // }
     }
-
-
 }
