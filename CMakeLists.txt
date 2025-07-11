@@ -25,6 +25,8 @@ qt_add_qml_module(appcalculator_2
         MainMenu.qml
         HiddenMenu.qml
         CalculatorButton.qml
+        SOURCES CalculatorEngine.h
+        SOURCES CalculatorEngine.cpp
 
 
 )

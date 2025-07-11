@@ -1,13 +1,14 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include <QDir>
-#include <QDebug>
+#include "CalculatorEngine.h"
+
 
 int main(int argc, char *argv[])
 {
 
     QGuiApplication app(argc, argv);
 
+    qmlRegisterType<CalculatorEngine>("Calculator", 1, 0, "CalculatorEngine");
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/calculator_2/Main.qml"));
     QObject::connect(

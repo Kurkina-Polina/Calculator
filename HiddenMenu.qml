@@ -19,6 +19,6 @@ ColumnLayout {
         Layout.preferredWidth: 321
         Layout.preferredHeight: 26
         text: "назад"
-        onClicked: tabBar.currentIndex = 0
+        onClicked: window.currentPage = 0
     }
 }

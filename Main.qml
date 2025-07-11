@@ -1,40 +1,40 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
+import Calculator 1.0
 
 ApplicationWindow {
+    id: window
     visible: true
     width: 360
     height: 640
     title: "Calculator"
-
-    property string inputText: "0"
-    property string historyText: ""
-    property bool isLongPress: false
     property int currentPage: 0
-
+    property bool isLongPress: false
 
     // Текущая страница (0 - основное, 1 - скрытое)
-
+    onCurrentPageChanged: {
+        if (currentPage === 0) {
+            stackView.replace(null, mainMenuComponent)
+        } else {
+            stackView.replace(null, secretPageComponent)
+        }
+    }
 
     StackView {
         id: stackView
         anchors.fill: parent
         initialItem: MainMenu {}
-    }
 
-    Timer {
-        id: comboResetTimer
-        interval: 3000
-        onTriggered: inputText = ""
-    }
+        Component {
+            id: mainMenuComponent
+            MainMenu {}
+        }
 
-    onInputTextChanged: {
-        // comboResetTimer.restart()
-        //
-        if (isLongPress && inputText === "123") {
-            stackView.push("HiddenMenu.qml")
-            inputText = ""
+        Component {
+            id: secretPageComponent
+            HiddenMenu {}
         }
     }
+
 }
