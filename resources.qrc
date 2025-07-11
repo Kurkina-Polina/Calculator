@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/action/calculate.svg</file>
+        <file>icons/action/invert.svg</file>
+        <file>icons/action/parenthese.svg</file>
+        <file>icons/action/percent.svg</file>
+        <file>icons/action/active_C.svg</file>
+        <file>icons/action/C.svg</file>
+        <file>icons/action/point.svg</file>
+        <file>icons/number/active_btn_2.svg</file>
+        <file>icons/number/btn_0.svg</file>
+        <file>icons/number/btn_1.svg</file>
+        <file>icons/number/btn_2.svg</file>
+        <file>icons/number/btn_3.svg</file>
+        <file>icons/number/btn_4.svg</file>
+        <file>icons/number/btn_5.svg</file>
+        <file>icons/number/btn_6.svg</file>
+        <file>icons/number/btn_7.svg</file>
+        <file>icons/number/btn_8.svg</file>
+        <file>icons/number/btn_9.svg</file>
+        <file>icons/operation/active_plus.svg</file>
+        <file>icons/operation/devide.svg</file>
+        <file>icons/operation/minus.svg</file>
+        <file>icons/operation/mult.svg</file>
+        <file>icons/operation/plus.svg</file>
+        <file>icons/action/active_calculate.svg</file>
+        <file>icons/action/active_invert.svg</file>
+        <file>icons/action/active_parenthese.svg</file>
+        <file>icons/action/active_percent.svg</file>
+        <file>icons/action/active_point.svg</file>
+        <file>icons/number/active_btn_0.svg</file>
+        <file>icons/number/active_btn_1.svg</file>
+        <file>icons/number/active_btn_3.svg</file>
+        <file>icons/number/active_btn_4.svg</file>
+        <file>icons/number/active_btn_5.svg</file>
+        <file>icons/number/active_btn_6.svg</file>
+        <file>icons/number/active_btn_7.svg</file>
+        <file>icons/number/active_btn_8.svg</file>
+        <file>icons/number/active_btn_9.svg</file>
+        <file>icons/operation/active_devide.svg</file>
+        <file>icons/operation/active_minus.svg</file>
+        <file>icons/operation/active_mult.svg</file>
+        <file>icons/back_Calculator.svg</file>
+        <file>icons/back_input.svg</file>
+        <file>icons/Status bar.svg</file>
+    </qresource>
+</RCC>
