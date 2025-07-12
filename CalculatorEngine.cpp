@@ -57,7 +57,9 @@ void CalculatorEngine::handlePercent() {
 
 void CalculatorEngine::handleParentheses(){
     if (m_displayText == "0") {
-        m_displayText = "";
+        m_displayText = "(";
+        emit displayTextChanged(m_displayText);
+        return;
     }
 
     int openCount = m_displayText.count('(');
