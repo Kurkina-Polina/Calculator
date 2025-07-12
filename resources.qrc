@@ -43,5 +43,6 @@
         <file>icons/back_Calculator.svg</file>
         <file>icons/back_input.svg</file>
         <file>icons/Status bar.svg</file>
+        <file>fonts/OpenSans-SemiBold.ttf</file>
     </qresource>
 </RCC>

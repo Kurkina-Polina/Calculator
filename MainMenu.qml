@@ -48,7 +48,10 @@ Rectangle {
            anchors.fill: parent
            source: "qrc:/icons/back_input.svg"
        }
-
+        FontLoader {
+            id: openSans
+            source: "qrc:/fonts/OpenSans-SemiBold.ttf"
+        }
         TextInput {
             id: historyField
             width: 280
@@ -63,7 +66,9 @@ Rectangle {
             text: mainDisplay.historyText
             readOnly: true
             font.pixelSize: 20
+            font.family: openSans.name
             color: "#FFFFFF"
+
         }
 
         TextInput {
@@ -79,6 +84,7 @@ Rectangle {
             horizontalAlignment: Text.AlignRight
             text: mainDisplay.displayText
             font.pixelSize: 50
+            font.family: openSans.name
             color: "#FFFFFF"
         }
     }
