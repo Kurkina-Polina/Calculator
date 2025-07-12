@@ -1,6 +1,6 @@
 
 # Calculator App
-<img width="183" height="339" alt="Calculator Screenshot" src="https://github.com/user-attachments/assets/b65e9b0f-e888-4a38-8f46-de34ccce33c0" />
+<img width="183" height="339" alt="image" src="https://github.com/user-attachments/assets/302b8847-724a-4e47-8a0f-ba43ed1010f2" />
 
 Калькулятор,написанный на С++/qml
 Из особенностей:
